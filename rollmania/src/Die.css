@@ -1,0 +1,22 @@
+.Die {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:bold;
+	font-size:48px;
+	width:128px;
+	height:128px;
+	background-color:#4d5c61;
+	color:#ffffff;
+	border:1px solid #4d5c61;
+	border-radius:30px;
+	margin:30px;
+	box-shadow:8px 8px #839398;
+	transition:0.2s;
+	}
+
+.Die:hover {
+	background-color:#657980;
+	width:120px;
+	height:120px;
+}
