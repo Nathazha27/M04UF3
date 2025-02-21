@@ -1,9 +1,9 @@
 import './Title.css';
 
-function Title() {
+function Title(props) {
 	return (
 		<header className="Title">
-			<h1>ROLLMANIA</h1>
+			<h1>{props.text}</h1>
 		</header>
 	);
 }
