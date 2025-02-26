@@ -17,7 +17,7 @@ function Die(props) {
 	}
 
 	if (props.roll){
-		number = get_random();
+		setNumber(get_random());
 	}
 
 	return (
