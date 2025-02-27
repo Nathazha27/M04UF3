@@ -1,9 +1,11 @@
 import './Die.css';
 import { useState } from 'react';
+import {useEffect } from 'react';
 
 function Die(props) {
 
 	let [number, setNumber] = useState("-");
+	let [isRolling,setRoll] =useState(false);
 
 	function get_random()
 	{
@@ -15,10 +17,11 @@ function Die(props) {
 		let r = get_random();
 		setNumber(r);
 	}
-
-	if (props.roll){
-		setNumber(get_random());
-	}
+	useEffect(() => {
+		if (props.roll){
+			setNumber(get_random());
+		}
+	},[props.roll]);
 
 	return (
 		<button className="Die" onClick={set_random}>

@@ -6,4 +6,10 @@
 	font-size:20px;
 	border-radius:20px;
 	padding:10px 50px 10px 50px;
-}																																																									
+	margin-bottom:25px;
+	transition:0.4s;
+}								
+
+.Button:hover{
+	transform:scale(1.1);
+}

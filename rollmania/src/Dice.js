@@ -1,5 +1,6 @@
 import './Dice.css';
 import Die from './Die.js';
+import React from 'react';
 
 function get_dice (quantity, roll) {
 	let dice_list = [];
