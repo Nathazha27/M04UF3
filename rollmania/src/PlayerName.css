@@ -1,0 +1,23 @@
+.input_nombre input{
+	font-family:Calibri;
+	font-size:20px;
+	border:2px solid #4d5c61;
+	border-radius:5px;
+	margin:10px 5px 10px 5px;
+}
+.input_nombre button{
+	font-family:Calibri;
+	font-size:20px;
+	background-color:#4d5c61;
+	border:1px solid #4d5c61;
+	border-radius:5px;
+	margin:10px 5px 10px 5px;
+	color:#ffffff;
+}
+.jugador{
+	font-family:Calibri;
+	font-size:20px;
+	background-color:#4d5c61;
+	color:#ffffff;
+	padding:10px;
+}

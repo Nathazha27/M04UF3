@@ -1,8 +1,13 @@
 import './Score.css';
 
 function Score(){
-	<div className="score_title">
-		<h2>SCORE</h2>
-	</div>
+	return(
+		<div className="score_title">
+			<h2>SCORE</h2>
+			<ol>
+				<li>Ñeque: 33</li>
+			</ol>
+		</div>
+	);
 }
 export default Score;

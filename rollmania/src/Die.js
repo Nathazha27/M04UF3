@@ -16,10 +16,12 @@ function Die(props) {
 	function set_random (){
 		let r = get_random();
 		setNumber(r);
+		
 	}
 	useEffect(() => {
 		if (props.roll){
 			setNumber(get_random());
+			props.onResult(number);
 		}
 	},[props.roll]);
 

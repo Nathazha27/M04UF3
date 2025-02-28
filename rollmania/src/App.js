@@ -11,23 +11,18 @@ function App() {
 	let [roll,setRoll] = useState(false);
 	function roll_dice () {
 		setRoll(true);
-		setTimeout(() => {
+		setTimeout (() =>{
 			setRoll(false);
-		}, 1000);
-	}
-	let [playerset, setplayerset] = useState(false);
-	function player_name (props){
-			setplayername(true);
+		},1000);
 	}
 	return (
 		<main className="App">
 			<Title text="ROLLMANIA"/>
-			<PlayerName setname={player_name}/>
+			<PlayerName />
 			<Dice quantity="3" roll={roll}/>
 			<Roll roll_func={roll_dice}/>
 			<Score />
 		</main>
 	);
 }
-
 export default App;
