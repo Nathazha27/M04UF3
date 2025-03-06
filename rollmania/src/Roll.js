@@ -9,7 +9,7 @@ function Roll(props) {
 		},1000);
 	});
 	return (
-		<button className="Button" onClick={props.roll_func} disabled={count > 0 ? "true" : ""}>
+		<button className="Button" onClick={props.roll_func} disabled={count > 0 ? "disabled" : ""}>
 			{count > 0 ? count : "Roll!!"}
 		</button>
 	);
