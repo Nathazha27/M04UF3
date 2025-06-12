@@ -29,6 +29,7 @@ function App() {
 			return;
 		}
 		player_score.current = total;
+		setScore({nombre: player_name.current, score: total});
 		console.log("Puntuación total: "+total);
 	}
 	return (

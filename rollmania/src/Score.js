@@ -24,7 +24,7 @@ function Score(props){
 		last_score.current = props.add_score;
 		localStorage.setItem("scores", JSON.stringify(score_list));
 		setScores(score_list);
-	});
+	}, [props.add_score]);
 
 	let scores_json = localStorage.getItem("scores");
 	let scores_parsed = JSON.parse(scores_json);
