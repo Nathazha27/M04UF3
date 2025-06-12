@@ -10,7 +10,7 @@ function Dice(props) {
 		total.current += value;
 		console.log(value+" "+total.current);
 		counter.current++;
-		if (counter.current == props.cantidad){
+		if (counter.current == props.quantity){
 			props.onTotal(total.current);
 		}
 	}
